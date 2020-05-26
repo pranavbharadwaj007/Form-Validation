@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>ThorTravels</title>
+</head>
+
+<body style="background: url('img/back.jpg');">
+    <div class="navbarclass">
+        <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+            <a class="navbar-brand" href="#">ThorTravels</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blogs</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Follow us
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">LinkedIn</a>
+                            <a class="dropdown-item" href="#">GitHub</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Youtube</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">About Us</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <img src="img/log3.png" height="65px" alt="" srcset="">
+                    <button class="btn btn-outline-danger my-3 my-sm-1" type="submit">Subscribe</button>
+                </form>
+            </div>
+        </nav>
+    </div>
+    <div id="success" class="alert alert-success alert-dismissible fade " role="alert">
+        <strong>Success!</strong> Your travel request has been successfully submitted.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div id="fail" class="alert alert-danger alert-dismissible fade " role="alert">
+        <strong>Failed !</strong> Pls enter valid details.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="container" style="text-align: center; ">
+        <h1 style="color: rgb(224, 173, 2);
+            text-shadow: 2px 2px 4px #4e3b07;
+          ">Thor Travels</h1>
+    </div>
+    <div class="forms" style="margin: auto;width: 50%;">
+        <form>
+            <div class="form-group"
+                style="color: rgb(248, 248, 248);font-size: 20pt;background-color: rgb(224, 173, 2);border-radius: 16px;">
+                <label for="name">User Name</label>
+                <input type="text" class="form-control " id="name" placeholder="Enter ur name">
+                <small id="namevalid" class="form-text text-muted invalid-feedback">
+                    Your Username must be 1-15 Characters Long and shud start with a char.
+                </small>
+            </div>
+            <div class="form-group"
+                style="color: rgb(248, 248, 248);font-size: 20pt;background-color: rgb(224, 173, 2);border-radius: 16px;">
+                <label for="email">Email address</label>
+                <input type="text" id="email" class="form-control" placeholder="name@example.com">
+                <small id="emailvalid" class="form-text text-muted invalid-feedback">
+                  your email must be valid.
+                </small>
+            </div>
+            <div class="form-group"
+                style="color: rgb(248, 248, 248);font-size: 20pt;background-color: rgb(224, 173, 2);border-radius: 16px;">
+                <label for="email">Phone Number</label>
+                <input type="digit" id="phone" class="form-control" placeholder="Enter your Phone No">
+                <small id="emailvalid" class="form-text text-muted invalid-feedback">
+                    Your Phonenumber must be 10 digit Long.
+                </small>
+            </div>
+            <div class="form-group"
+                style="color: rgb(248, 248, 248);font-size: 20pt;background-color: rgb(224, 173, 2);border-radius: 16px;">
+                <label for="car">Select your Travel Country</label>
+                <select class="form-control" id="car">
+                    <option>UK</option>
+                    <option>USA</option>
+                    <option>Singapore</option>
+                    <option>Switzerland</option>
+                </select>
+            </div>
+            <div class="form-group"
+                style="color: rgb(248, 248, 248);font-size: 20pt;background-color: rgb(224, 173, 2);border-radius: 16px;">
+                <label for="address">Enter your address</label>
+                <input class="form-control" name="address" id="address" rows="3"></input>
+            </div>
+            <div class="form-group"
+                style="color: rgb(248, 248, 248);font-size: 20pt;background-color: rgb(224, 173, 2);border-radius: 16px;">
+                <label for="exampleFormControlTextarea1">Enter your travel plan</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <button id="sbmt" class="btn btn-warning"
+                style="border: 2px solid rgb(219, 117, 0);border-radius: 13px;">Submit</button>
+        </form>
+    </div>
+
+
+
+    <div class="footer my-3">
+        <div class="progress" style="margin: auto;width: 50%;">
+            <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 100%"
+                aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+        <script src="javascript/form.js"></script>
+</body>
+
+</html>
